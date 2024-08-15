@@ -1,0 +1,19 @@
+html {
+    font-family: "DM Sans", sans-serif !important;
+}
+
+header ul.active {
+    display: flex;
+    position: absolute;
+    background: white;
+    width: 100%;
+    left: 0;
+    top: 73px;
+    border-width: 1px;
+    flex-direction: column;
+    padding: 20px 0 !important;
+}
+
+header ul.active li:hover {
+    cursor: pointer;
+}

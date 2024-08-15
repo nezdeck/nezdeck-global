@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEZDECK | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#112E26',
+                }
+            }
+        }
+    }
+</script>
+
+<body>
+    <div class="bg-zinc-100 h-screen">
+        <header class="h-[73px] bg-white">
+            <div class="h-full  m-auto w-[95%] md:w-[80%] flex justify-between items-center">
+                <div class=" flex items-center gap-10">
+                    <div id="headerlogo" class="opacity-0 px-1.5 text-primary font-bold text-xl">
+                        NEZDECK
+                        <!-- <img width="107"
+                            src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/tax-advisor-logo.svg"
+                            class="Nezdeck Logo" alt=""> -->
+                    </div>
+                    <ul id="header-collapsed-content"
+                        class="hidden lg:flex justify-center items-center gap-7 border-zinc-200  text-sm font-medium">
+                        <li class="opacity-0">About us</li>
+                        <li class="opacity-0">Services</li>
+                        <li class="opacity-0">Pricing</li>
+                        <li class="opacity-0">News</li>
+                        <li class="opacity-0">Contact</li>
+                    </ul>
+                </div>
+                <div>
+                    <div id="headerButtons" class="flex items-center
+                     lg:mr-6  hidden lg:flex">
+                        <button class="opacity-0 px-4 bg-zinc-100 py-3.5 text-sm font-medium">Free Consultation</button>
+                        <button
+                            class="opacity-0 px-6 bg-black py-3.5 text-white text-sm font-medium transition-all hover:bg-transparent  border border-transparent hover:text-black hover:border-zinc-900">Get
+                            started</button>
+                    </div>
+                    <button id="header-trigger"
+                        class="transition-all bg-zinc-200 text-primary w-10 h-10 flex justify-center items-center rounded-sm flex lg:hidden hover:text-white hover:bg-primary"><i
+                            class="fa-solid fa-bars-staggered"></i></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="section-01" class="bg-zinc-100 grid grid-cols-1 lg:grid-cols-2 min-h-96 ">
+                <div class="w-full lg:max-w-[600px] ml-auto py-[92px]">
+                    <div class="pl-7 xl:pl-0 pr-[80px] flex flex-col gap-[3vw]">
+                        <div class="">
+                            <div id="sectionTag"
+                                class=" opacity-0 bg-white px-[8px] py-0.5 mb-5 inline-block rounded-sm">Financial
+                                services</div>
+                            <h1 id="sectionHeading" class=" opacity-0 text-[57px] font-medium"
+                                style="line-height: 60px;">Build a sustainable future
+                                for your company</h1>
+                        </div>
+                        <div>
+                            <p id="sectionPara" class=" mb-8 opacity-0">Unlock success with tailored financial <br>
+                                consulting solutions for your
+                                business
+                                growth.</p>
+                            <div class="flex gap-5 items-center">
+                                <button id="sectionSolidBtn"
+                                    class="opacity-0 px-4 bg-black text-white py-3.5 text-sm font-medium transition-all hover:bg-transparent  border border-transparent hover:text-black hover:border-zinc-900">Free
+                                    Consultation</button>
+                                <div class="flex items-center gap-3">
+
+                                    <button id="sectionPlayBtn"
+                                        class="opacity-0 transition-all w-12 h-12 rounded-full bg-transparent hover:bg-black border border-black text-black hover:text-white py-3.5 text-sm font-medium"><i
+                                            class="fa-solid fa-play"></i></button>
+                                    <p class="font-medium text-sm">Watch Video</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sectionImage" class="h-full bg-zinc-200 flex items-center">
+                    <img class="opacity-0"
+                        src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/business-slide-a.jpg"
+                        alt="">
+                </div>
+            </section>
+            <section id="section-02" class="bg-primary  min-h-96  pb-[92px] ">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="w-full lg:max-w-[79%] xl:ml-auto pt-[92px] pb-[32px] lg:py-[92px]">
+                        <div class="pl-[20px] xl:pl-0 pr-[60px] xl:pr-[120px] flex flex-col gap-[3vw]">
+                            <div class="text-white">
+                                <div id="sectionTag" class=" bg-zinc-50/5 px-[8px] py-0.5 mb-5 inline-block rounded-sm">
+                                    Commitment</div>
+                                <h1 id="sectionTitle" class="text-[37px] lg:text-[47px] font-medium"
+                                    style="line-height: 60px;">Your bussiness goals are our top priority</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-[92px] pt-0 lg:py-[92px] px-7">
+                        <div>
+                            <div class="flex flex-col lg:flex-row items-center">
+                                <button
+                                    class="animateBtn w-full lg:max-w-[195px] h-[50px] text-primary  bg-white font-medium">Expertise</button>
+                                <button
+                                    class="animateBtn w-full lg:max-w-[195px] h-[50px] text-white bg-zinc-50/5 font-medium">Innovative</button>
+                                <button
+                                    class="animateBtn w-full lg:max-w-[195px] h-[50px] text-white bg-zinc-50/5 font-medium">Accountability</button>
+                            </div>
+                            <div class="mt-[30px] text-white max-w-full lg:max-w-[585px]">
+                                <p id="paragraph">We embody unwavering expertise, garnered through years of industry
+                                    mastery. Our
+                                    team’s
+                                    extensive knowledge and refined skills ensure effective solutions, fostering trust
+                                    and
+                                    delivering excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full xl:max-w-[79%] flex justify-center flex-col md:flex-row gap-5 lg:gap-8 xl:mx-auto px-7 xl:px-0">
+
+                    <div
+                        class="cards w-full md:max-w-[277px] h-[264px] bg-zinc-50/5 md:border-b-2 border-zinc-100/60 flex justify-center items-center flex-col">
+                        <img class="animateImage"
+                            src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/57.svg"
+                            alt="">
+                        <p class="animateText text-[36px] text-white font-medium">02+</p>
+                        <p class="animateText text-[16px] text-white px-2 text-center">Years of industry experience</p>
+                    </div>
+
+                    <div
+                        class="cards w-full md:max-w-[277px] h-[264px] bg-zinc-50/5 md:border-b-2 border-zinc-100/60 flex justify-center items-center flex-col">
+                        <img class="animateImage"
+                            src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/52.svg"
+                            alt="">
+                        <p class="animateText text-[36px] text-white font-medium">14</p>
+                        <p class="animateText text-[16px] text-white px-2 text-center">Projects Running</p>
+                    </div>
+
+                    <div
+                        class="cards w-full md:max-w-[277px] h-[264px] bg-zinc-50/5 md:border-b-2 border-zinc-100/60 flex justify-center items-center flex-col">
+                        <img class="animateImage"
+                            src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/53.svg"
+                            alt="">
+                        <p class="animateText text-[36px] text-white font-medium">50+</p>
+                        <p class="animateText text-[16px] text-white px-2 text-center">Data transferred monthly</p>
+                    </div>
+
+                    <div
+                        class="cards w-full md:max-w-[277px] h-[264px] bg-zinc-50/5 md:border-b-2 border-zinc-100/60 flex justify-center items-center flex-col">
+                        <img class="animateImage"
+                            src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/58.svg"
+                            alt="">
+                        <p class="animateText text-[36px] text-white font-medium">15+</p>
+                        <p class="animateText text-[16px] text-white px-2 text-center">Certified Team Members</p>
+                    </div>
+
+
+                </div>
+            </section>
+            <section id="section-03" class="bg-white grid grid-cols-1 md:grid-cols-2 min-h-96 ">
+                <div class="w-full xl:max-w-[600px] xl:ml-auto pt-[142px] pb-7 md:py-[142px]">
+                    <div class="pl-7 xl:pl-0 pr-[80px] flex flex-col gap-[1vw]">
+                        <div class="">
+                            <div id="section03Tag" class=" bg-zinc-100 px-[8px] py-0.5 mb-5 inline-block rounded-sm">
+                                Financial planning
+                            </div>
+                            <h1 id="section03Heading" class=" text-[47px] font-medium" style="line-height: 60px;">
+                                Strategic planning
+                                for optimal growth</h1>
+                        </div>
+                        <p id="section03Para" class=" mb-4 text-[18px]">Crafting precise financial roadmaps aligned with
+                            your business objectives.</p>
+                        <div id="section03List" class="flex flex-col gap-3">
+                            <div class="flex gap-3 items-center">
+                                <div><i
+                                        class="w-8 h-8 flex items-center justify-center fa-solid fa-check bg-zinc-100"></i>
+                                </div>
+                                <p class="text-[16px]">Optimize resource allocation</p>
+                            </div>
+                            <div class="flex gap-3 items-center">
+                                <div><i
+                                        class="w-8 h-8 flex items-center justify-center fa-solid fa-check bg-zinc-100"></i>
+                                </div>
+                                <p class="text-[16px]">Adapt to market changes</p>
+                            </div>
+                            <div class="flex gap-3 items-center">
+                                <div><i
+                                        class="w-8 h-8 flex items-center justify-center fa-solid fa-check bg-zinc-100"></i>
+                                </div>
+                                <p class="text-[16px]">Achieve long-term goals</p>
+                            </div>
+                            <div class="flex gap-3 items-center mt-4">
+                                <button id="sectionButton"
+                                    class="px-7 bg-black text-white py-3.5 text-sm font-medium transition-all hover:bg-transparent  border border-transparent hover:text-black hover:border-zinc-900">Learn
+                                    More</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:max-w-[400px] lg:max-w-[450px] h-full flex justify-center items-center">
+                    <div id="section03ImageContainer"
+                        class="w-full relative bg-zinc-100 md:bg-transparent m-7 md:m-0 p-0 md:px-2">
+                        <img class="relative z-10 mx-auto"
+                            src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/business-1.jpg"
+                            alt="">
+                        <div class="hidden lg:block absolute top-[50px] left-[50px] bg-zinc-100 w-full h-full"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-04" class="bg-white grid grid-cols-1 md:grid-cols-2 min-h-96 ">
+                <div
+                    class="order-2 md:order-1 w-full md:max-w-[400px] lg:max-w-[450px] m-auto h-full flex justify-center items-start">
+                    <div id="section04ImageContainer"
+                        class="w-full relative bg-zinc-100 md:bg-transparent m-7 md:m-0 p-0 md:px-2">
+                        <img class="relative z-10 mx-auto"
+                            src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/business-img-2.jpg"
+                            alt="">
+                        <div class="hidden lg:block absolute top-[50px] left-[50px] bg-zinc-100 w-full h-full"></div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 w-full xl:max-w-[600px] xl:mr-auto pt-[142px] md:pt-0 md:pb-[142px]">
+                    <div class="pl-7 xl:pl-0 pr-[80px] flex flex-col gap-[1vw]">
+                        <div class="">
+                            <div id="section04Tag" class=" bg-zinc-100 px-[8px] py-0.5 mb-5 inline-block rounded-sm">
+                                Performance analysis
+                            </div>
+                            <h1 id="section04Heading" class=" text-[47px] font-medium" style="line-height: 60px;">
+                                In-depth financial performance analysis</h1>
+                        </div>
+                        <p id="section04Para" class=" mb-4 text-[18px]">Analyze and enhance financial performance for
+                            sustained growth.</p>
+                        <div id="section04List" class="flex flex-col gap-3">
+                            <div class="flex gap-3 items-center">
+                                <div><i
+                                        class="w-8 h-8 flex items-center justify-center fa-solid fa-check bg-zinc-100"></i>
+                                </div>
+                                <p class="text-[16px]">
+                                    Identify strengths and weaknesses</p>
+                            </div>
+                            <div class="flex gap-3 items-center">
+                                <div><i
+                                        class="w-8 h-8 flex items-center justify-center fa-solid fa-check bg-zinc-100"></i>
+                                </div>
+                                <p class="text-[16px]">
+                                    Optimize operational efficiency</p>
+                            </div>
+                            <div class="flex gap-3 items-center">
+                                <div><i
+                                        class="w-8 h-8 flex items-center justify-center fa-solid fa-check bg-zinc-100"></i>
+                                </div>
+                                <p class="text-[16px]">Increase revenue streams</p>
+                            </div>
+                            <div class="flex gap-3 items-center mt-4">
+                                <button id="sectionButton"
+                                    class="px-7 bg-black text-white py-3.5 text-sm font-medium transition-all hover:bg-transparent  border border-transparent hover:text-black hover:border-zinc-900">Learn
+                                    More</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="section-05" class="bg-white grid grid-cols-1 md:grid-cols-2 min-h-96 ">
+                <div class="w-full xl:max-w-[600px] xl:ml-auto pt-[142px] pb-7 md:pt-0 md:pb-[142px]">
+                    <div class="pl-7 xl:pl-0 pr-[80px] flex flex-col gap-[1vw]">
+                        <div class="">
+                            <div id="section05Tag" class=" bg-zinc-100 px-[8px] py-0.5 mb-5 inline-block rounded-sm">
+                                Financial planning
+                            </div>
+                            <h1 id="section05Heading" class=" text-[47px] font-medium" style="line-height: 60px;">
+                                Strategic planning
+                                for optimal growth</h1>
+                        </div>
+                        <p id="section05Para" class=" mb-4 text-[18px]">Crafting precise financial roadmaps aligned with
+                            your business objectives.</p>
+                        <div id="section05List" class="flex flex-col gap-3">
+                            <div class="flex gap-3 items-center">
+                                <div><i
+                                        class="w-8 h-8 flex items-center justify-center fa-solid fa-check bg-zinc-100"></i>
+                                </div>
+                                <p class="text-[16px]">Optimize resource allocation</p>
+                            </div>
+                            <div class="flex gap-3 items-center">
+                                <div><i
+                                        class="w-8 h-8 flex items-center justify-center fa-solid fa-check bg-zinc-100"></i>
+                                </div>
+                                <p class="text-[16px]">Adapt to market changes</p>
+                            </div>
+                            <div class="flex gap-3 items-center">
+                                <div><i
+                                        class="w-8 h-8 flex items-center justify-center fa-solid fa-check bg-zinc-100"></i>
+                                </div>
+                                <p class="text-[16px]">Achieve long-term goals</p>
+                            </div>
+                            <div class="flex gap-3 items-center mt-4">
+                                <button id="sectionButton"
+                                    class="px-7 bg-black text-white py-3.5 text-sm font-medium transition-all hover:bg-transparent  border border-transparent hover:text-black hover:border-zinc-900">Learn
+                                    More</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:max-w-[400px] lg:max-w-[450px] h-full flex justify-center items-start">
+                    <div id="section05ImageContainer"
+                        class="w-full relative bg-zinc-100 md:bg-transparent m-7 md:m-0 p-0 md:px-2">
+                        <img class="relative z-10 mx-auto"
+                            src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/business-1.jpg"
+                            alt="">
+                        <div class="hidden lg:block absolute top-[50px] left-[50px] bg-zinc-100 w-full h-full"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-06" class="bg-zinc-100  min-h-96  py-[92px] ">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-10 items-center w-full xl:w-[79%] px-7 xl:px-0 mx-auto mb-10">
+
+                    <div id="section06Heading" class="text-[47px] font-medium" style="line-height: 60px;">
+                        Tangible results shared here
+                    </div>
+                    <p id="section06Para" class="text-[18px] font-normal">Discover how our financial expertise
+                        transformed businesses like yours, delivering exceptional results and growth.
+                    </p>
+                    <div class="lg:text-end">
+
+                        <button id="section06Btn"
+                            class="px-7 bg-black text-white py-3.5 text-[16px] font-medium transition-all hover:bg-transparent  border border-transparent hover:text-black hover:border-zinc-900">Read
+                            all
+                            testimonials</button>
+                    </div>
+                </div>
+                <div
+                    class="w-full xl:max-w-[79%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 mx-auto px-7 xl:px-0">
+
+                    <div id="section06Card01"
+                        class=" w-full lg:max-w-[380px] min-h-[357px] bg-white flex  flex-col p-7 gap-7">
+                        <p class="text-[21px] font-normal">Helped navigate regulatory challenges. Valued
+                            advisors for strategic financial decisions.</p>
+                        <div class="flex items-center gap-2">
+                            <img class="w-14 h-14 rounded-full bg-zinc-100"
+                                src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/team2.jpg"
+                                alt="">
+                            <div>
+                                <p class="text-[19px] font-medium">Frederic Hill</p>
+                                <p class="text-[16px] font-light">
+                                    Founder & CEO</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="text-[36px] font-medium" style="line-height: 40px;">+ 120 %</p>
+                            <p class="text-[16px] font-normal text-zinc-600">Increase in customer growth rate</p>
+                        </div>
+                    </div>
+                    <div id="section06Card02"
+                        class=" w-full lg:max-w-[380px] min-h-[357px] bg-white flex  flex-col p-7 gap-7">
+                        <p class="text-[21px] font-normal">Stellar support in navigating market complexities. Trusted
+                            partners for financial growth.</p>
+                        <div class="flex items-center gap-2">
+                            <img class="w-14 h-14 rounded-full bg-zinc-100"
+                                src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/team1.jpg"
+                                alt="">
+                            <div>
+                                <p class="text-[19px] font-medium">Safaa Sampson
+                                </p>
+                                <p class="text-[16px] font-light">Account Executive
+
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="text-[36px] font-medium" style="line-height: 40px;">$ 250 k</p>
+                            <p class="text-[16px] font-normal text-zinc-600">Saved in operational costs</p>
+                        </div>
+                    </div>
+                    <div id="section06Card03"
+                        class=" w-full lg:max-w-[380px] min-h-[357px] bg-white flex  flex-col p-7 gap-7">
+                        <p class="text-[21px] font-normal">Innovative solutions tailored to our needs. A reliable
+                            partner for our financial excellence.</p>
+                        <div class="flex items-center gap-2">
+                            <img class="w-14 h-14 rounded-full bg-zinc-100"
+                                src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/team4.jpg"
+                                alt="">
+                            <div>
+                                <p class="text-[19px] font-medium">Brendan Buck</p>
+                                <p class="text-[16px] font-light">Business Manager</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="text-[36px] font-medium" style="line-height: 40px;">+ 25 %</p>
+                            <p class="text-[16px] font-normal text-zinc-600">Increase in company revenue
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-07" class="bg-white  min-h-96  py-[92px] px-6 xl:px-0 ">
+                <div id="ContactBox"
+                    class="bg-zinc-100 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-[1181px] mx-auto mb-10">
+                    <div class="p-10 pb-0 lg:p-20 pr-10 ">
+                        <div id="sectionTag" class="font-medium bg-white px-[8px] py-0.5 mb-3 inline-block rounded-sm">
+                            Let's connect
+                        </div>
+                        <h1 id="sectionHeading" class=" opacity-0 text-[47px] font-medium">We’re here to help
+                        </h1>
+
+                        <p id="sectionPara" class=" mb-8 opacity-0">Need help with a project, have a <br> question about
+                            our work? We’re here.</p>
+                        <div>
+                            <input type="text" placeholder="Full name"
+                                class="placeholder:text-zinc-900 bg-transparent border text-[16px] px-5 outline-0 focus:border-zinc-900 border-zinc-300 h-12 w-full mb-4">
+                            <input type="text" placeholder="Email address"
+                                class="placeholder:text-zinc-900 bg-transparent border text-[16px] px-5 outline-0 focus:border-zinc-900 border-zinc-300 h-12 w-full mb-4">
+                            <textarea placeholder="Message" rows="5"
+                                class="placeholder:text-zinc-900 bg-transparent border text-[16px] p-5 outline-0 focus:border-zinc-900 border-zinc-300 w-full mb-4"></textarea>
+                            <button
+                                class="w-full px-7 bg-black text-white py-3.5 text-sm font-medium transition-all hover:bg-transparent  border border-transparent hover:text-black hover:border-zinc-900">Submit</button>
+
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img class="w-full h-[400px] lg:h-full object-cover"
+                            src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/business-cta.jpg"
+                            alt="">
+                        <div
+                            class="absolute bottom-0 left-0 right-0 bg-zinc-100/50 backdrop-blur-md flex items-center justify-between text-[24px] text-black p-5">
+                            <!-- <div class="p-2 rounded-lg font-medium mb-4">
+                                An insightful consulting firm with an engaged team, offering solutions blending
+                                analytics
+                                and creativity.
+                            </div> -->
+                            <div class="px-4 py-2 text-[16px] rounded-sm ">
+                                <div class="font-bold">Rayyan Ali K.</div>
+                                <p class="font-semibold  text-sm">Founder & CEO</p>
+                            </div>
+                            <div class="px-4 py-2 font-bold text-primary">
+                                NEZDECK
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-primary w-full  text-white flex flex-col justify-end">
+            <div
+                class="w-[85%] m-auto py-20 grid grid-cols-2 sm:grid-cols-3 gap-10 md:grid-cols-4 lg:grid-cols-5 font-light text-sm">
+                <div class="col-span-2 sm:col-span-3 md:col-span-2">
+                    <h1 class="font-medium mb-3 text-2xl">NEZDECK</h1>
+                    <p class="w-72">Our primary goal is to empower business owners, agencies, and freelancers with
+                        maximum creative
+                        freedom</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">News</a>
+                </div>
+                <div class="flex flex-col gap-4 ">
+                    <a href="">Projects</a>
+                    <a href="">Pricings</a>
+                    <a href="">Contact</a>
+                    <a href="">Help Desk</a>
+                </div>
+                <div class="flex gap-2">
+                    <a href="" class="w-10 h-10 flex items-center justify-center bg-zinc-100/10 rounded-sm"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="" class="w-10 h-10 flex items-center justify-center bg-zinc-100/10 rounded-sm"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="w-10 h-10 flex items-center justify-center bg-zinc-100/10 rounded-sm"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div
+                class="border-t border-zinc-100/20 w-[85%] m-auto py-8 text-sm font-light flex items-center justify-between  flex-col sm:flex-row">
+                <p class="mb-2 sm:mb-0">© NEZDECK. All Rights Reserved.</p>
+                <div class="flex gap-5">
+                    <a href="" class="transition-all border-b-2 border-primary hover:border-white">Term &
+                        Conditions</a>|<a href=""
+                        class="transition-all border-b-2 border-primary hover:border-white">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/dist/gsap.js"></script>
+<script>
+    // header js
+    $("#header-trigger").click(function () {
+        $("#header-collapsed-content").toggleClass('active');
+        if ($("#header-collapsed-content").hasClass('active')) {
+            $(this).addClass('bg-primary text-white');
+            $(this).removeClass('bg-zinc-200 text-primary');
+            $(this).html('<i class="fa-solid fa-xmark"></i>');
+
+        } else {
+            $(this).removeClass('text-white bg-primary');
+            $(this).addClass('bg-zinc-200 text-primary');
+            $(this).html('<i class="fa-solid fa-bars-staggered"></i>');
+        }
+    })
+    // footer js
+</script>
+
+</html>
