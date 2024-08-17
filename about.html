@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEZDECK | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#112E26',
+                }
+            }
+        }
+    }
+</script>
+
+<body>
+    <div class="bg-zinc-100 h-screen">
+        <header class="h-[73px] bg-white">
+            <div class="h-full  m-auto w-[95%] md:w-[80%] flex justify-between items-center">
+                <div class=" flex items-center gap-10">
+                    <div id="headerlogo" class="opacity-0 px-1.5 text-primary font-bold text-xl">
+                      <a href="index.html">NEZDECK SYSTEMS</a>  
+
+                    </div>
+                    <ul id="header-collapsed-content"
+                        class="hidden lg:flex justify-center items-center gap-7 border-zinc-200  text-sm font-medium">
+                        <li class="opacity-0"><a href="about.html">About us</a></li>
+                        <li class="opacity-0">Services</li>
+                        <li class="opacity-0">Pricing</li>
+                        <li class="opacity-0">News</li>
+                        <li class="opacity-0"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div id="headerButtons" class="flex items-center
+                     lg:mr-6  hidden lg:flex">
+                        <button class="opacity-0 px-4 bg-zinc-100 py-3.5 text-sm font-medium">Free Consultation</button>
+                        <button
+                            class="opacity-0 px-6 bg-black py-3.5 text-white text-sm font-medium transition-all hover:bg-transparent  border border-transparent hover:text-black hover:border-zinc-900">Get
+                            started</button>
+                    </div>
+                    <button id="header-trigger"
+                        class="transition-all bg-zinc-200 text-primary w-10 h-10 flex justify-center items-center rounded-sm flex lg:hidden hover:text-white hover:bg-primary"><i
+                            class="fa-solid fa-bars-staggered"></i></button>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <section id="section-07" class="bg-primary  min-h-96  py-[100px] px-6 xl:px-0 ">
+                <div class="w-full pb-28 flex justify-center items-center flex-col">
+                    <h1 class="text-[57px] font-medium text-center text-white">Making a positive impact</h1>
+                    <p class="text-[18px] font-light text-white text-center lg:w-[50%]">With a passion for technology
+                        and a
+                        commitment to excellence, we empower businesses to thrive in the digital landscape.</p>
+                </div>
+                <div id="ContactBox"
+                    class="bg-zinc-100 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-[1181px] mx-auto mb-10">
+                    <div class="p-10 pb-0 lg:p-20 pr-10 ">
+                        <div id="sectionTag" class="font-medium bg-white px-[8px] py-0.5 mb-3 inline-block rounded-sm">
+                            Value & Culture </div>
+                        <h1 id="sectionHeading" class=" opacity-0 text-[47px] font-medium">We hold ourselves to high
+                            standards</h1>
+                        <div>
+                            <div
+                                class="flex rounded-lg lg:max-w-[360px] h-[50px] font-medium overflow-hidden mt-10 mb-5">
+                                <button class="w-full bg-primary  text-white">Mission</button>
+                                <button class="w-full text-primary  bg-white">Vision</button>
+                                <button class="w-full text-primary  bg-white">Values</button>
+                            </div>
+                            <p id="sectionPara" class=" mb-8 opacity-0">With a passion for technology and a commitment
+                                to excellence, we empower businesses to thrive in the digital landscape.
+                            </p>
+                        </div>
+                        <!-- <div>
+                            <input type="text" placeholder="Full name"
+                                class="placeholder:text-zinc-900 bg-transparent border text-[16px] px-5 outline-0 focus:border-zinc-900 border-zinc-300 h-12 w-full mb-4">
+                            <input type="text" placeholder="Email address"
+                                class="placeholder:text-zinc-900 bg-transparent border text-[16px] px-5 outline-0 focus:border-zinc-900 border-zinc-300 h-12 w-full mb-4">
+                            <textarea placeholder="Message" rows="5"
+                                class="placeholder:text-zinc-900 bg-transparent border text-[16px] p-5 outline-0 focus:border-zinc-900 border-zinc-300 w-full mb-4"></textarea>
+                            <button
+                                class="w-full px-7 bg-black text-white py-3.5 text-sm font-medium transition-all hover:bg-transparent  border border-transparent hover:text-black hover:border-zinc-900">Submit</button>
+
+                        </div> -->
+                    </div>
+                    <div class=" h-full">
+                        <img class="w-full h-[400px] lg:h-full object-cover"
+                            src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/11/business-cta.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+            </section>
+            <section id="section-07" class="bg-zinc-100  min-h-96  py-[92px] px-6 xl:px-0 ">
+                <div id="ContactBox"
+                    class="bg-zinc-100 grid grid-cols-1 lg:grid-cols-2 gap-10  max-w-[1181px] mx-auto mb-10">
+                    <div class=" pr-10 py-5">
+                        <div id="sectionTag" class="font-medium bg-white px-[8px] py-0.5 mb-3 inline-block rounded-sm">
+                            Services and solutions
+                        </div>
+                        <h1 id="sectionHeading" class=" opacity-0 text-[47px] font-medium">Helping you grow</h1>
+                        <p id="sectionPara" class=" mb-8 opacity-0 md:w-[70%]">Elevate your brand to new heights
+                            ensuring your
+                            message reaches its full potential.</p>
+                        <div class="grid grid-cols-2 gap-y-6 gap-5">
+                            <div>
+                                <div
+                                    class="transition-all w-20 h-20 bg-white hover:bg-primary hover:text-white flex items-center justify-center mb-[0.75rem]">
+                                    <i class=" fa-2x fa-light fa-radio"></i>
+                                </div>
+                                <p class="text-[21px] font-medium mb-[0.75rem]">Solid Planning</p>
+                                <p class="text-[16px] font-normal mb-[0.75rem]">Receive premium assistance from our
+                                    global network.</p>
+                            </div>
+                            <div>
+                                <div
+                                    class="transition-all w-20 h-20 bg-white hover:bg-primary hover:text-white flex items-center justify-center mb-[0.75rem]">
+                                    <i class=" fa-2x fa-light fa-handshake"></i>
+                                </div>
+                                <p class="text-[21px] font-medium mb-[0.75rem]">Collaboration Tools</p>
+                                <p class="text-[16px] font-normal mb-[0.75rem]">Keep your strategic goals and planning
+                                    in one place.</p>
+                            </div>
+                            <div>
+                                <div
+                                    class="transition-all w-20 h-20 bg-white hover:bg-primary hover:text-white flex items-center justify-center mb-[0.75rem]">
+                                    <i class=" fa-2x fa-light fa-shield-check"></i>
+                                </div>
+                                <p class="text-[21px] font-medium mb-[0.75rem]">Data Protection</p>
+                                <p class="text-[16px] font-normal mb-[0.75rem]">Define each stage of work to see what’s
+                                    important.</p>
+                            </div>
+                            <div>
+                                <div
+                                    class="transition-all w-20 h-20 bg-white hover:bg-primary hover:text-white flex items-center justify-center mb-[0.75rem]">
+                                    <i class=" fa-2x fa-light fa-headset"></i>
+                                </div>
+                                <p class="text-[21px] font-medium mb-[0.75rem]">Software Support</p>
+                                <p class="text-[16px] font-normal mb-[0.75rem]">From the small to the big picture, we
+                                    organize work.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-full">
+                        <img class="w-full h-[400px] lg:h-full object-cover shadow-2xl" loading="lazy"
+                            src="https://finpath.keydesign.xyz/business-consulting/wp-content/uploads/sites/10/2023/12/finpath-consulting-about.jpg"
+                            alt="">
+                        <div class="absolute flex items-center justify-center w-full h-full top-0 left-0">
+                            <button
+                                class="transition-all w-20 h-20 rounded-full bg-white border-2 border-transparent hover:bg-transparent hover:border-zinc-100 text-black hover:text-white"><i
+                                    class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-primary w-full  text-white flex flex-col justify-end">
+            <div
+                class="w-[85%] m-auto py-20 grid grid-cols-2 sm:grid-cols-3 gap-10 md:grid-cols-4 lg:grid-cols-5 font-light text-sm">
+                <div class="col-span-2 sm:col-span-3 md:col-span-2">
+                    <h1 class="font-medium mb-3 text-2xl">NEZDECK SYSTEMS</h1>
+                    <p class="w-72">At Nezdeck Systems, we empower businesses with top-tier IT solutions, ensuring
+                        growth and innovation with maximum creative freedom.</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">News</a>
+                </div>
+                <div class="flex flex-col gap-4 ">
+                    <a href="">Projects</a>
+                    <a href="">Pricings</a>
+                    <a href="">Contact</a>
+                    <a href="">Help Desk</a>
+                </div>
+                <div class="flex gap-2">
+                    <a href="" class="w-10 h-10 flex items-center justify-center bg-zinc-100/10 rounded-sm"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="" class="w-10 h-10 flex items-center justify-center bg-zinc-100/10 rounded-sm"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="w-10 h-10 flex items-center justify-center bg-zinc-100/10 rounded-sm"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div
+                class="border-t border-zinc-100/20 w-[85%] m-auto py-8 text-sm font-light flex items-center justify-between  flex-col sm:flex-row">
+                <p class="mb-2 sm:mb-0">© NEZDECK. All Rights Reserved.</p>
+                <div class="flex gap-5">
+                    <a href="" class="transition-all border-b-2 border-primary hover:border-white">Term &
+                        Conditions</a>|<a href=""
+                        class="transition-all border-b-2 border-primary hover:border-white">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/dist/gsap.js"></script>
+<script>
+    // header js
+    $("#header-trigger").click(function () {
+        $("#header-collapsed-content").toggleClass('active');
+        if ($("#header-collapsed-content").hasClass('active')) {
+            $(this).addClass('bg-primary text-white');
+            $(this).removeClass('bg-zinc-200 text-primary');
+            $(this).html('<i class="fa-solid fa-xmark"></i>');
+
+        } else {
+            $(this).removeClass('text-white bg-primary');
+            $(this).addClass('bg-zinc-200 text-primary');
+            $(this).html('<i class="fa-solid fa-bars-staggered"></i>');
+        }
+    })
+    // footer js
+</script>
+
+</html>
